@@ -70,42 +70,36 @@
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- HERO - Исправлено по твоему запросу -->
     <header id="hero" class="hero-bg pt-8 pb-12 md:pt-16 md:pb-20">
-        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-            <div class="space-y-6">
-                <div class="inline-flex items-center bg-emerald-100 text-emerald-700 text-sm font-semibold px-4 h-9 rounded-3xl">
-                    🔥 Обмежена партія • Знижка 44%
-                </div>
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
                 
-                <h1 class="text-5xl md:text-6xl font-bold leading-tight tracking-tighter">
-                    Бездротовий міні-подрібнювач<br>
-                    <span class="text-emerald-500">JUCIER AND460</span>
-                </h1>
-                
-                <p class="text-xl md:text-2xl text-slate-600 max-w-lg">
-                    Натисни одну кнопку — і забудь про ножі назавжди! Ідеальне пюре за 10 секунд.
-                </p>
-                
-                <div class="flex items-baseline gap-3">
-                    <div class="text-5xl font-bold text-emerald-500">449 грн</div>
-                    <div>
-                        <span class="line-through text-slate-400 text-2xl">799 грн</span>
-                        <span class="ml-2 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-3xl">-44%</span>
+                <!-- Левая колонка: текст + кнопка -->
+                 <div class="space-y-8">
+                    
+                    <img src="main-product1.jpg" alt="JUCIER AND460" class="w-full max-w-[460px] drop-shadow-2xl rounded-3xl">
+                    
+                    <div class="flex items-baseline gap-3">
+                        <div class="text-5xl font-bold text-emerald-500">449 грн</div>
+                        <div>
+                            <span class="line-through text-slate-400 text-2xl">799 грн</span>
+                            <span class="ml-2 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-3xl">-44%</span>
+                        </div>
                     </div>
+                    
+                    <button onclick="document.getElementById('order-section').scrollIntoView({behavior:'smooth'})" 
+                            class="bg-emerald-500 hover:bg-emerald-600 text-white text-xl font-semibold px-10 py-5 rounded-3xl shadow-xl shadow-emerald-500/30 flex items-center gap-3">
+                        Замовити зараз за 449 грн
+                        <span class="text-3xl">🚀</span>
+                    </button>
                 </div>
-                
-                <button onclick="document.getElementById('order-section').scrollIntoView({behavior:'smooth'})" 
-                        class="bg-emerald-500 hover:bg-emerald-600 text-white text-xl font-semibold px-10 py-5 rounded-3xl shadow-xl shadow-emerald-500/30 flex items-center gap-3">
-                    Замовити зараз за 449 грн
-                    <span class="text-3xl">🚀</span>
-                </button>
             </div>
             
-            <div class="flex justify-center relative">
+            <!-- Блок с фото main-product с анимацией float — ниже кнопки -->
+            <div class="mt-16 flex justify-center">
                 <img src="main-product.png" alt="JUCIER AND460" 
-                     class="product-float w-full max-w-[420px] drop-shadow-2xl">
-
+                     class="product-float w-full max-w-[380px] drop-shadow-2xl rounded-3xl">
             </div>
         </div>
     </header>
@@ -126,7 +120,7 @@
     <section id="how" class="max-w-7xl mx-auto px-4 py-16">
         <div class="text-center mb-10">
             <span class="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-3xl text-sm font-semibold">ПРОСТО ЯК 1-2-3</span>
-            <h2 class="text-4xl font-bold mt-4">Натисни кнопку — отримай ідеальний результат!</h2>
+            <h2 class="text-4xl font-bold mt-4">Натисни кнопку — отримай ідеальне пюре!</h2>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white rounded-3xl p-6 shadow-sm text-center">
@@ -183,16 +177,15 @@
         </div>
     </section>
 
-    <!-- OPUS1 + NEW GIF -->
+    <!-- OPUS1 + GIF3 -->
     <section class="max-w-7xl mx-auto px-4 py-16">
         <div class="text-center mb-10">
             <h2 class="text-4xl font-bold">Що можна подрібнити за секунду?</h2>
         </div>
         <img src="opus1.jpg" alt="Приклади продуктів" class="mx-auto rounded-3xl shadow-2xl max-w-5xl w-full mb-12">
         
-        <!-- Новий блок з gifdiesasib3 -->
         <div class="text-center">
-            <img src="gifdiesasib3.gif" alt="Процес роботи подрібнювача" 
+            <img src="gifdiesasib3.gif" alt="Процес роботи" 
                  class="mx-auto rounded-3xl shadow-2xl max-w-4xl w-full">
         </div>
     </section>
@@ -225,58 +218,49 @@
         </div>
         
         <div class="space-y-4">
-            <!-- FAQ 1 -->
             <div class="faq-item border border-slate-200 rounded-3xl overflow-hidden">
                 <button onclick="toggleFAQ(this)" class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-medium text-lg">
                     Як довго тримає заряд?
                     <span class="text-2xl transition-transform">↓</span>
                 </button>
                 <div class="faq-answer px-8 pb-6 text-slate-600">
-                    На одному заряді пристрій може зробити до 60 циклів подрібнення. Повна зарядка займає близько 2 годин через USB.
+                    На одному заряді пристрій може зробити до 60 циклів подрібнення.
                 </div>
             </div>
-            
-            <!-- FAQ 2 -->
             <div class="faq-item border border-slate-200 rounded-3xl overflow-hidden">
                 <button onclick="toggleFAQ(this)" class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-medium text-lg">
                     Чи можна подрібнювати лід?
                     <span class="text-2xl transition-transform">↓</span>
                 </button>
                 <div class="faq-answer px-8 pb-6 text-slate-600">
-                    Так! Трирівневі леза з нержавіючої сталі 304 легко справляються з кубиками льоду.
+                    Так! Трирівневі леза легко справляються з кубиками льоду.
                 </div>
             </div>
-            
-            <!-- FAQ 3 -->
             <div class="faq-item border border-slate-200 rounded-3xl overflow-hidden">
                 <button onclick="toggleFAQ(this)" class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-medium text-lg">
                     Чи безпечний для дитячого харчування?
                     <span class="text-2xl transition-transform">↓</span>
                 </button>
                 <div class="faq-answer px-8 pb-6 text-slate-600">
-                    Абсолютно. Чаша виготовлена з харчового пластику без BPA, а леза — з якісної нержавіючої сталі.
+                    Так. Чаша з харчового пластику без BPA.
                 </div>
             </div>
-            
-            <!-- FAQ 4 -->
             <div class="faq-item border border-slate-200 rounded-3xl overflow-hidden">
                 <button onclick="toggleFAQ(this)" class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-medium text-lg">
                     Як чистити пристрій?
                     <span class="text-2xl transition-transform">↓</span>
                 </button>
                 <div class="faq-answer px-8 pb-6 text-slate-600">
-                    Пристрій повністю розбірний. Чаша та леза легко миються під водою. У комплекті є спеціальна щіточка.
+                    Повністю розбірний. Є щіточка в комплекті.
                 </div>
             </div>
-            
-            <!-- FAQ 5 -->
             <div class="faq-item border border-slate-200 rounded-3xl overflow-hidden">
                 <button onclick="toggleFAQ(this)" class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-medium text-lg">
                     Скільки часу займає подрібнення?
                     <span class="text-2xl transition-transform">↓</span>
                 </button>
                 <div class="faq-answer px-8 pb-6 text-slate-600">
-                    Зазвичай 8–12 секунд. Достатньо натиснути кнопку один раз і дочекатися автоматичної зупинки.
+                    8–12 секунд.
                 </div>
             </div>
         </div>
@@ -294,7 +278,7 @@
         </div>
     </section>
 
-    <!-- ORDER SECTION -->
+    <!-- ORDER FORM -->
     <section id="order-section" class="max-w-2xl mx-auto px-4 py-20">
         <div id="form-container" class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
             <div class="text-center mb-10">
@@ -303,7 +287,6 @@
             </div>
 
             <form id="order-form" onsubmit="sendToTelegram(event)">
-                <!-- Шторка вибору кількості -->
                 <div class="mb-8">
                     <label class="block text-sm font-medium mb-3">Оберіть кількість</label>
                     <select id="quantity" class="form-input w-full px-6 py-5 bg-slate-50 border border-slate-200 rounded-3xl text-lg focus:outline-none">
@@ -312,15 +295,10 @@
                     </select>
                 </div>
 
-                <div class="grid grid-cols-2 gap-4 mb-8">
-                    <div>
-                        <label class="block text-sm font-medium mb-2">Ім’я</label>
-                        <input type="text" id="name" required class="form-input w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-3xl text-lg">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium mb-2">Прізвище</label>
-                        <input type="text" id="surname" required class="form-input w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-3xl text-lg">
-                    </div>
+                <div class="mb-8">
+                    <label class="block text-sm font-medium mb-2">Ім’я та Прізвище</label>
+                    <input type="text" id="fullname" placeholder="Ім’я Прізвище" required 
+                           class="form-input w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-3xl text-lg">
                 </div>
 
                 <div class="mb-10">
@@ -336,7 +314,6 @@
             </form>
         </div>
 
-        <!-- Success -->
         <div id="successMessage" class="hidden text-center bg-emerald-50 border border-emerald-200 rounded-3xl p-12">
             <div class="text-7xl mb-6">🎉</div>
             <h2 class="text-4xl font-bold text-emerald-700">Дякуємо за замовлення!</h2>
@@ -357,44 +334,31 @@
                     <a href="mailto:support@cleaner-store.com.ua" class="block hover:text-emerald-400">📧 support@cleaner-store.com.ua</a>
                     <p>Україна, вул. Володимира Великого 41, м. Дніпро</p>
                 </div>
-                <div class="text-xs text-slate-400">
-                    © 2026 Всі права захищені.
-                </div>
+                <div class="text-xs text-slate-400">© 2026 Всі права захищені.</div>
             </div>
         </div>
     </footer>
 
     <script>
-        // FAQ toggle
         function toggleFAQ(btn) {
             const item = btn.parentElement;
             item.classList.toggle('faq-open');
-            
             const arrow = btn.querySelector('span');
-            if (item.classList.contains('faq-open')) {
-                arrow.style.transform = 'rotate(180deg)';
-            } else {
-                arrow.style.transform = 'rotate(0deg)';
-            }
+            arrow.style.transform = item.classList.contains('faq-open') ? 'rotate(180deg)' : 'rotate(0deg)';
         }
 
-        // Відправка форми (з твого робочого варіанту)
         function sendToTelegram(event) {
             event.preventDefault();
 
             const qtySelect = document.getElementById('quantity').value;
-            const name = document.getElementById('name').value.trim();
-            const surname = document.getElementById('surname').value.trim();
+            const fullname = document.getElementById('fullname').value.trim();
             const phone = document.getElementById('phone').value.trim();
 
-            const fullName = `${name} ${surname}`;
-
-            if (name.length < 2) {
-                alert("❌ Будь ласка, введіть справжнє ім'я.");
+            if (fullname.length < 3) {
+                alert("❌ Будь ласка, введіть ім’я та прізвище.");
                 return;
             }
-            const phoneDigits = phone.replace(/\D/g, '');
-            if (phoneDigits.length < 9) {
+            if (phone.replace(/\D/g, '').length < 9) {
                 alert("❌ Будь ласка, введіть коректний номер телефону.");
                 return;
             }
@@ -403,48 +367,43 @@
             submitBtn.textContent = 'ВІДПРАВКА...';
             submitBtn.disabled = true;
 
-            let total = 0;
-            if (qtySelect.includes('1 шт')) total = 449;
-            else if (qtySelect.includes('2 шт')) total = 898;
+            let total = qtySelect.includes('1 шт') ? 449 : 898;
 
             const BOT_TOKEN = '8741175626:AAHlZneEOfIbidnmdGE_z_u6Z834wwwTTYo';
             const CHAT_ID = '-1003835862302';
-            const textMessage = `🔥 НОВЕ ЗАМОВЛЕННЯ JUCIER AND460\n\n📦 Товар: JUCIER AND460\n🛒 Варіант: ${qtySelect}\n👤 ПІБ: ${fullName}\n📞 Телефон: ${phone}\n💰 Сума: ${total} грн`;
+            const textMessage = `🔥 НОВЕ ЗАМОВЛЕННЯ JUCIER AND460\n\n📦 Товар: JUCIER AND460\n🛒 Варіант: ${qtySelect}\n👤 ПІБ: ${fullname}\n📞 Телефон: ${phone}\n💰 Сума: ${total} грн`;
 
             const tgUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(textMessage)}`;
 
             const googleSheetUrl = 'https://script.google.com/macros/s/AKfycbxFdvMBUE-zwCXaZ38CrQAc4DlxPBs000_ZixvDfLNvSlLm-zGWuZZ-GQDBJn2YSutJuQ/exec';
             const sheetData = {
-                "name": fullName,
+                "name": fullname,
                 "phone": phone,
                 "variant": qtySelect,
                 "total": total
             };
 
-            const sendTG = fetch(tgUrl);
-            const sendSheet = fetch(googleSheetUrl, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(sheetData)
+            Promise.all([
+                fetch(tgUrl),
+                fetch(googleSheetUrl, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(sheetData)
+                })
+            ]).then(() => {
+                document.getElementById('form-container').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+            }).catch(() => {
+                alert('Виникла помилка. Спробуйте ще раз або зателефонуйте: +38 (097) 534-12-88');
+            }).finally(() => {
+                submitBtn.textContent = 'ОФОРМИТИ ЗАМОВЛЕННЯ →';
+                submitBtn.disabled = false;
             });
-
-            Promise.all([sendTG, sendSheet])
-                .then(() => {
-                    document.getElementById('form-container').style.display = 'none';
-                    document.getElementById('successMessage').style.display = 'block';
-                })
-                .catch(() => {
-                    alert('Виникла помилка. Спробуйте ще раз або зателефонуйте: +38 (097) 534-12-88');
-                })
-                .finally(() => {
-                    submitBtn.textContent = 'ОФОРМИТИ ЗАМОВЛЕННЯ →';
-                    submitBtn.disabled = false;
-                });
         }
 
         window.onload = () => {
-            console.log('%c✅ Лендінг JUCIER AND460 оновлено', 'color:#22c55e; font-weight:bold');
+            console.log('%c✅ Лендінг JUCIER AND460 готовий', 'color:#22c55e; font-weight:bold');
         };
     </script>
 </body>
