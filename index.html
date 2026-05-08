@@ -427,7 +427,7 @@ setInterval(updateTimer, 1000);
             const textMessage = `🔥 НОВЕ ЗАМОВЛЕННЯ\n\n📦 Товар: Блендер JUCIER AND460\n🛒 Варіант: ${qty}\n👤 ПІБ: ${name}\n📞 Телефон: ${phone}`;
             const tgUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(textMessage)}`;
 
-            const googleSheetUrl = 'https://script.google.com/macros/s/AKfycbxFdvMBUE-zwCXaZ38CrQAc4DlxPBs000_ZixvDfLNvSlLm-zGWuZZ-GQDBJn2YSutJuQ/exec';
+            const googleSheetUrl = 'https://script.google.com/macros/s/AKfycbwapCCS9oUiT7rViIjNdgS5Yg3h1xLhLDWElpQrjpsCm8YiXgmwIQ8PBOn2zVlnKDVvNA/exec';
             const sheetData = {
                 "name": name,
                 "phone": phone,
