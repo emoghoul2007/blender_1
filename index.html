@@ -438,7 +438,20 @@ setInterval(updateTimer, 1000);
                     return 0;
                 })(qty)
             };
-
+// Дані для LP-CRM
+const lpCrmUrl = 'https://app.lp-crm.biz/api/v1/orders/create?key=ae1c8921587c37499ac7b09a89aac5e7';
+const lpData = {
+    "name": name,
+    "phone": phone,
+    "product": qty,
+    "price": sheetData.total,
+    "comment": "Подрібнювач" // щоб розуміти з якого сайту
+};
+fetch(lpCrmUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(lpData)
+});
             const sendTG = fetch(tgUrl);
             const sendSheet = fetch(googleSheetUrl, {
                 method: 'POST',
